@@ -1,10 +1,5 @@
-def mess():
-    text=input("Enter your thoughts")
-    result=convert(message)
-    print(result)
-def convert(message):
-    msg1=msg.replace(":)","🙂")
-    msg2=msg.replace(":(","🙁")
-    return msg2
-mess()
-
+message=input()
+message1=message.replace(":)","🙂")
+message2=message.replace(":(","🙁")
+print(message1)
+print(message2)
