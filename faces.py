@@ -1,5 +1,5 @@
 def mess():
-    text=input("Enter your thoughts: ")
+    text=input("Enter your thoughts")
     result=convert(message)
     print(result)
 def convert(message):
