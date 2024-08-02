@@ -1,4 +1,5 @@
-message=input()
-message1=message.replace(":)","🙂")
-message2=message.replace(":(","🙁")
-print(message1,message2)
+def main():
+    text=input("Enter a smiley or sad face")
+def emoji(text1):
+    return text1.replace(":)","🙂").replace(":(","🙁")
+main()
