@@ -6,7 +6,7 @@ def main():
     png = "image/png"
     pdf = "application/pdf"
     txt = "text/plain"
-    zip = "application/zip
+    zip = "application/zip"
     if file_name.endswith(".gif"):
         print(gif)
     elif file_name.endswith(".jpg")  or extension.endswith(".jpeg"):
