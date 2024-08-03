@@ -6,5 +6,4 @@ def main():
             print("Yes")
         else:
             print("No")
-    check_answer(Question)
 main()
