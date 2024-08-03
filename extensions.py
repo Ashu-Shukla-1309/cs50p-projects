@@ -9,7 +9,7 @@ def main():
     zip="application/zip"
     if file_name.endswith(".gif"):
         print(gif)
-    elif file_name.endswith(".jpg")or extension.endswith(".jpeg"):
+    elif file_name.endswith(".jpg")or file_name.endswith(".jpeg"):
         print(jpg)
     elif file_name.endswith(".png"):
         print(png)
