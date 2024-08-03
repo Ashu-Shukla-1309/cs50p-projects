@@ -8,6 +8,6 @@ def main():
         print("dinner time")
 def convert(time):
     hours,minutes=time.split(":")
-    return float(hours)+float(minutes)
+    return float(hours)+float(minutes)/60
 if __name__=__main__:
     main()
