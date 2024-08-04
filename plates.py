@@ -1,11 +1,9 @@
 def main():
-    s= input("Plate: ")
-    if is_valid(s):
+    plate= input("Plate: ")
+    if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
-
-
 def is_valid(s):
     if 6>=len(s)>=2 and s[0:2].isalpha() and s.isalnum():
         for char in s:
@@ -16,4 +14,5 @@ def is_valid(s):
                 else:
                     return False
         return True
-main()
+if __name__=="__main__":
+    main()
