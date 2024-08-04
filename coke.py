@@ -1,5 +1,5 @@
 amoununt_due=50
-change_owed=o
+change_owed=0
 while amount_due>0:
     print(amount_due)
     coin=int(input("Enter the coin: "))
