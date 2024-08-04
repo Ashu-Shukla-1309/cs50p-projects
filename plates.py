@@ -5,16 +5,26 @@ def main():
     else:
         print("Invalid")
 def is_valid(s):
-    if len(s)>=2 and len(s)<=6:
-        if s.isalpha():
-            return True
-        elif s.alnum() and s[0:2].isalpha():
-            for char in s:
-                if char.isdidgit():
-                    index=s.index(char)
-                    if s[index:].isdigit() and int(char)!=0:
-                        return True
-                    else:
-                        return False
-if __name__="__main__":
-    main()
+    valid_check = True
+    digit_count = 0
+    if(len(s) < 2 or len(s) > 6 ):
+        valid_check = False
+        return valid_check
+    if(s[0].isdigit() or s[1].isdigit()):
+        valid_check = False
+        return valid_check
+    for char in s:
+        if(not char.isalnum()):
+            valid_check = False
+            return valid_check
+        if(digit_count > 1 and char.isalpha()):
+            valid_check = False
+            return valid_check
+        if(char.isdigit()):
+            digit_count += 1
+        if(digit_count == 1 and char == "0"):
+            valid_check = False
+            return valid_check
+    return valid_check
+
+main()
