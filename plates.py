@@ -5,7 +5,7 @@ def main():
     else:
         print("Invalid")
 def is_valid(s):
-    if 6>=len(s)>=2:
+    if len(s)>=2 and len(s)<=6:
         if s.isalpha():
             return True
         elif s.alnum() and s[0:2].isalpha():
