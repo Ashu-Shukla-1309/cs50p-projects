@@ -3,11 +3,11 @@ def main():
     output=remove_vowels(text)
     print(output)
 def remove_vowels(text):
-    vowels="AEIUOaeiou"
+    vowels="AEIOUaeiou"
     result=""
     for char in text:
         if char not in vowels:
             result+=char
-        return result
+    return result
 if__name="__main__":
     main()
