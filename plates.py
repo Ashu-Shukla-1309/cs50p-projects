@@ -5,9 +5,10 @@ def main():
     else:
         print("Invalid")
 def is_valid(s):
-    if 6>=len(s)>=2 and s.isalpha():
+    if 6>=len(s)>=2:
+        if s.isalpha():
         return True
-        if s.alnum() and s[0:2].isalpha():
+        elif s.alnum() and s[0:2].isalpha():
             for char in s:
                 if char.isdidgit():
                     index=s.index(char)
