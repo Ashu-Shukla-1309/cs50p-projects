@@ -18,7 +18,7 @@ d={
     "pineapple":"50",
     "plums":"70",
     "strawberries":"50",
-    "sweet cherries":"100",
+    "sweetcherries":"100",
     "tangarine":"50",
     "watermelon":"80"
 }
