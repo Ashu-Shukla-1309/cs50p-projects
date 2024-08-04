@@ -1,5 +1,4 @@
-camelcase=input("Camelcase=").lower()
-print("snake_case:",end="")
+camelcase=input("Camelcase=")
 for i in camelcase:
     if i.isupper():
         print("_"+i.lower(),end="")
