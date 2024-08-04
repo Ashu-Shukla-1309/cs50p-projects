@@ -22,4 +22,4 @@ d={ "apple":"130",
     "watermelon":"80"
 }
 if fruit in d:
-    print(calories[fruit])
+    print(d[fruit])
