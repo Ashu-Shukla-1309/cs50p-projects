@@ -1,6 +1,6 @@
 
 fruit=("Enter the name of the fruit:").lower().strip()
-d={
+d= {
     "apple":"130",
     "avocado":"50",
     "banana":"110",
