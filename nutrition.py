@@ -23,3 +23,4 @@ def main():
 }
 if fruit in d:
     print(calories[fruit])
+main()
