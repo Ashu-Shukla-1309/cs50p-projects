@@ -21,6 +21,6 @@ def main():
         "tangarine" : "50",
         "water melon" : "80"
 }
-if fruit in d:
-    print(calories[fruit])
+    if fruit in d:
+        print(calories[fruit])
 main()
