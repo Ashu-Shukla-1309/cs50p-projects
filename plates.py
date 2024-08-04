@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if 6>=len(s)>=2 and s[0:2].isalpha() and s.isalnum:
+    if 6>=len(s)>=2 and s[0:2].isalpha() and s.isalnum():
         for char in s:
             if char.isdidgit():
                 index=s.index(char)
