@@ -1,5 +1,5 @@
 
-fruit=input("Enter the name of the fruit:").lower().strip()
+fruit=input("Enter the name of the fruit:").lower().remove(" ","")
 d= {
     "apple":"130",
     "avocado":"50",
