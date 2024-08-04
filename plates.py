@@ -7,7 +7,7 @@ def main():
 def is_valid(s):
     if 6>=len(s)>=2:
         if s.isalpha():
-        return True
+            return True
         elif s.alnum() and s[0:2].isalpha():
             for char in s:
                 if char.isdidgit():
