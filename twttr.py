@@ -7,5 +7,4 @@ def remove_vowels(text):
     result=""
     for char in vowels:
         result+=char
-    return result
 main()
