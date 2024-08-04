@@ -11,8 +11,9 @@ def is_valid(s):
         for char in s:
             if char.isdidgit():
                 index=s.index(char)
-                return True
-            else:
-                return False
+                if s[index:].isdigit() and int(char)!=0:
+                    return True
+                else:
+                    return False
         return True
 main()
