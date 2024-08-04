@@ -9,4 +9,5 @@ def remove_vowels(text):
         if char not in vowels:
             result+=char
         return result
-main()
+if__name="__main__":
+    main()
