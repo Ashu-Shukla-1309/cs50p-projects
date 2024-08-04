@@ -4,6 +4,7 @@ def main():
         print("Valid")
     else:
         print("Invalid")
+        
 def is_valid(s):
     validity= True
     count_digit = 0
