@@ -1,7 +1,3 @@
-def main():
-    text=input("")
-    output=remove_vowels(text)
-    print(output)
 def remove_vowels(text):
     vowels="AEIOUaeiou"
     result=""
@@ -9,5 +5,6 @@ def remove_vowels(text):
         if char not in vowels:
             result+=char
     return result
-if__name="__main__":
-    main()
+user_input=input("Input:")
+output=remove_vowels(user_input)
+print(output)
