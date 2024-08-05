@@ -22,7 +22,7 @@ while True:
         date=date.replace(",","")
         mon,day,year=date.split(" ")
         if mon in months:
-            mon=months[i]+1
+            mon=months.index[mon]+1
         else:
             continue
     else:
