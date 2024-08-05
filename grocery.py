@@ -5,11 +5,11 @@ while True:
     except EOFError:
         print()
         break
-    if input in dict1:
-        dict1[input]+=1
+    if input1 in dict1:
+        dict1[input1]+=1
     else:
-        dict1[input]=1
-for input in sorted(dict1.keys()):
-    print(dict1[input],input)
+        dict1[input1]=1
+for input1 in sorted(dict1.keys()):
+    print(dict1[input1],input1)
 
 
