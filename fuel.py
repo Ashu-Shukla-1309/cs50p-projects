@@ -5,7 +5,7 @@ while True:
         numerator=int(numerator)
         denominator=int(denominator)
         percentage=numerator/denominator
-        if f<1:
+        if percentage<1:
             break
     except(ValueError,ZeroDivisionError):
         pass
