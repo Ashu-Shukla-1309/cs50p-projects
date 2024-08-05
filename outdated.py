@@ -14,7 +14,6 @@ months=[
 ]
 while True:
     date=input("Date:").title().strip()
-
     try:
         month,day,year=date.split("/")
         if 1<=int(month)<=12 or 1<=int(day)<=31:
@@ -32,7 +31,7 @@ while True:
                 break
             else:
                 print("invalid")
-        except:
+        except ValueError:
             print('invalid')
             pass
 print(f"{year}-{int(month):02}-{int(day):02}")
