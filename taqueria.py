@@ -12,12 +12,12 @@ items={
 total=0
 while True:
     try:
-        item=input().title().strip()
+        item=input("Item:").title().strip()
         if item in items:
             total+=items[item]
             print("Total:${total:.2f}")
         else:
             pass
     except EOFError:
-        print("\n")
+        print(f"{total:.2f}")
         break
