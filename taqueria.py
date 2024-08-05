@@ -14,7 +14,7 @@ while True:
     try:
         item=input().title()
         if item in items:
-            total+=items.get(item)
+            total+=items[item]
             print(f"Total:${total:.2f}")
         else:
             pass
