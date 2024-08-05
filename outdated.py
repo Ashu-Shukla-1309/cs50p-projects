@@ -14,19 +14,20 @@ months=[
 ]
 while True:
     date=input("Date:")
-    if"/"in date:
-        month,day,year=date.split("/")
-    elif","in date:
-        date=date.replace(",","")
-        month,day,year=date.split("/")
-        if month in months:
-            month=months.index(month)+1
-            break
     try:
-        if int(month)>12 or int(day)>31:
-            continue
-        else:
+        month,day,year=date.split("/")
+        if 1<=int(month)<=12 or 1<=int(day)<=31:
             break
     except ValueError:
-        continue
-print(year+"-"+f"{int(month):02}"+"-"+f"{int(day):02}")
+        try:
+            old_month,old_day,year=date.split(" ")
+            for i in range(len(months)):
+                if old_month==months[i]:
+                    month=i+1
+            day=old_day.replace(",","")
+            if 1<=int(month)<=12 or 1<=int(day)<=31:
+                break
+        except:
+            print()
+            pass
+print(f"{year}-{int(month):02}-{int(day):02}")
