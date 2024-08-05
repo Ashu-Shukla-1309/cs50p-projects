@@ -15,4 +15,4 @@ if f<=1:
 elif f>=99:
     print("F")
 else:
-    print(f"{p}%")
+    print(f"{f}%")
