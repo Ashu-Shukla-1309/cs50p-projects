@@ -16,8 +16,6 @@ while True:
         if item in items:
             total+=items[item]
             print(f"Total:${total:.2f}")
-        else:
-            pass
     except EOFError:
         print()
         break
