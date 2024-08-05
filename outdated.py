@@ -29,9 +29,7 @@ while True:
             day=old_day.replace(",","")
             if 1<=int(month)<=12 or 1<=int(day)<=31:
                 break
-            else:
-                print("invalid")
         except ValueError:
-            print('invalid')
-            break
+            print()
+            pass
 print(f"{year}-{int(month):02}-{int(day):02}")
