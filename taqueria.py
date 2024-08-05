@@ -1,12 +1,11 @@
-lst=[]
+total=0
 while True:
     try:
-        x=input().title()
-        if x not in dict():
-            pass
+        item=input().title()
+        if item in items:
+            total+=items.get(item)
+            print(f"${total:.2f}")
         else:
-            lst.append(dict.get(x))
-            print(f"${sum(lst):.2f}")
+            pass
     except EOFError:
         break
-
