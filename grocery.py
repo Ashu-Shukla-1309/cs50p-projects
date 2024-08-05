@@ -2,7 +2,7 @@ dict1={}
 while True:
     try:
         input1=input("Enter your items").upper()
-     except EOFError:
+    except EOFError:
         print()
         break
     if input1 in dict1:
