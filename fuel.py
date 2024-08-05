@@ -4,7 +4,7 @@ while True:
         numerator,denominator=fuel.split("/")
         numerator1=int(numerator)
         denominator1=int(denominator)
-        percentage=numerator/denominator
+        percentage=numerator1/denominator1
         if percentage<1:
             break
     except(ValueError,ZeroDivisionError):
