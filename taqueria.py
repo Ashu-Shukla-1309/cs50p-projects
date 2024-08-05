@@ -15,8 +15,9 @@ while True:
         item=input().title()
         if item in items:
             total+=items.get(item)
-            print(f"${total:.2f}")
+            print(f"Total:${total:.2f}")
         else:
             pass
     except EOFError:
+        print()
         break
