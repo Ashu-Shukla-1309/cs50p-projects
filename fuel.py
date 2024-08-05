@@ -1,11 +1,11 @@
 while True:
     fuel=input("Fraction:")
     try:
-        numerator,denominator=fuel.split("/")
-        numerator1=int(numerator)
-        denominator1=int(denominator)
-        percentage=numerator1/denominator1
-        if percentage<1:
+        X,Y=fuel.split("/")
+        X1=int(X)
+        Y1=int(Y)
+        percentage=X1/Y1
+        if percentage<=1:
             break
     except(ValueError,ZeroDivisionError):
         pass
