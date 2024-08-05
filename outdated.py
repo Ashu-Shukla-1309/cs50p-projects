@@ -18,7 +18,7 @@ while True:
         month,day,year=date.split("/")
         if 1<=int(month)<=12 or 1<=int(day)<=31:
             break
-    except ValueError:
+    except:
         try:
             old_month,old_day,year=date.split(" ")
             for i in range(len(months)):
