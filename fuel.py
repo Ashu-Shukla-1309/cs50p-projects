@@ -9,10 +9,11 @@ while True:
             break
     except(ValueError,ZeroDivisionError):
         pass
-f=percentage*100.round()
-if f<=1:
+f=percentage*100
+k=round(f)
+if k<=1:
     print("E")
-elif f>=99:
+elif k>=99:
     print("F")
 else:
-    print(f"{f}%")
+    print(f"{k}%")
