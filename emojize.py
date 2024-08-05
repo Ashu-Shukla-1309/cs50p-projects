@@ -1,4 +1,4 @@
-import pip
+import emoji
 def emojize_input(input_str):
     return emoji.emojize(input_str,language='alias')
 if __name__=="__main__":
