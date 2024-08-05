@@ -1,7 +1,7 @@
 dict1={}
 while True:
     try:
-        input1=input("Enter your items").upper()
+        input1=input().upper()
     except EOFError:
         print()
         break
