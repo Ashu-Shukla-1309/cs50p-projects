@@ -9,8 +9,7 @@ while True:
             break
     except(ValueError,ZeroDivisionError):
         pass
-f=percentage*100
-round(f)
+f=percentage*100.round()
 if f<=1:
     print("E")
 elif f>=99:
