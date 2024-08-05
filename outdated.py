@@ -33,5 +33,5 @@ while True:
                 print("invalid")
         except ValueError:
             print('invalid')
-            pass
+            break
 print(f"{year}-{int(month):02}-{int(day):02}")
