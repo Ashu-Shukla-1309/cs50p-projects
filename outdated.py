@@ -13,23 +13,25 @@ months=[
     "December"
 ]
 while True:
-    date=input("Date:").title().strip()
-    try:
-        month,day,year=date.split("/")
-        if 1<=int(month)<=12 or 1<=int(day)<=31:
-            break
+    date=input("Date:").strip()
+    if "/" in date:
+        mon, day, year = date.split("/")
+        if mon.isalpha()==True:
+            continue
+    elif "," in date:
+        date=date.replace(",","")
+        mon,day,year=date.split(" ")
+        if mon in months:
+            mon=months[i]+1
         else:
-            print("invalid")
-    except:
-        try:
-            old_month,old_day,year=date.split(" ")
-            for i in range(len(months)):
-                if old_month==months[i]:
-                    month=i+1
-            day=old_day.replace(",","")
-            if 1<=int(month)<=12 or 1<=int(day)<=31:
-                break
-        except ValueError:
-            print()
-            pass
-print(f"{year}-{int(month):02}-{int(day):02}")
+            continue
+    else:
+        continue
+    try:
+        if int(mon)>12 or int(day)>31:
+            continue
+        else:
+            break
+    except EOFError:
+        break
+print(f"{year}-{int(mon):02}-{int(day):02}")
