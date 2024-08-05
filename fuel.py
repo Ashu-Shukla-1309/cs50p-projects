@@ -10,6 +10,7 @@ while True:
     except(ValueError,ZeroDivisionError):
         pass
 f=percentage*100
+round(f)
 if f<=1:
     print("E")
 elif f>=99:
