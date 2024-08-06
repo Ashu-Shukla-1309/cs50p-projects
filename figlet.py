@@ -8,7 +8,6 @@ if len(sys.argv)==1:
 elif len(sys.argv)==3 and sys.argv[1] in ["-f","--font"] and sys.argv[2] in fonts:
     figlet.setFont(font=sys.argv[2])
 else:
-    print("Invalid Usage")
-    sys.exit(1)
-msg=input("Input:")
+    sys.exit("Invalid Usage")
+msg=input("Input: ")
 print({figlet.renderText(msg)})
