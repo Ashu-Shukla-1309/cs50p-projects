@@ -2,22 +2,13 @@ import sys
 import random
 from pyfiglet import Figlet
 figlet = Figlet()
+fonts=figlet.getFonts()
 if len(sys.argv)==1:
-    isRandomFont=True
-elif len(sys.argv)==3 and (sys.argv[1]=="-f" or sys.argv[1]=="--font"):
-    isRandomFont=False
+    figlet.setFont(font=random.choice(fonts))
+elif len(sys.argv)==3 and sys.argv[1] in ["-f","--font"] and sys.argv[2] in fonts:
+    figlet.getFonts(font=sys.argv[2])
 else:
     sys.exit(1)
-
-figlet.getFonts()
-if isRandomFont==False:
-    try:
-        figlet.setFont(font=sys.argv[2])
-    except:
-        print("Invalid Message")
-        sys.exit(1)
-else:
-    font=random.choice(figlet.getFonts())
+    print("Invalid Usage")
 msg=input("Input:")
-print("Output:")
 print({figlet.renderText(msg)})
