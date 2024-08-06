@@ -9,5 +9,5 @@ elif len(sys.argv)==3 and sys.argv[1] in ["-f","--font"] and sys.argv[2] in font
     figlet.setFont(font=sys.argv[2])
 else:
     sys.exit("Invalid Usage")
-msg=input("Input: ")
+msg=input()
 print({figlet.renderText(msg)})
