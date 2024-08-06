@@ -1,5 +1,4 @@
 import inflect
-import sys
 p = inflect.engine()
 names=[]
 while True:
