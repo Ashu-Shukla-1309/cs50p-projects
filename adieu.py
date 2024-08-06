@@ -4,7 +4,7 @@ p = inflect.engine()
 names=[]
 while True:
     try:
-        input=input()
+        input1=input()
         names.append(input)
     except EOFError:
         print()
