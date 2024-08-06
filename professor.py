@@ -24,7 +24,8 @@ def main():
         x = generate_integer(level)
         y = generate_integer(level)
         answer = x + y
-        for attempt in range(3):
+        attempts=0
+        while attempts<3:
             try:
                 user_answer = int(input(f"{x} + {y} = "))
                 if user_answer == answer:
@@ -34,7 +35,8 @@ def main():
                     print("EEE")
             except ValueError:
                 print("EEE")
-        if user_answer != answer:
+            attempts+=1
+        if attempts==3:
             print(f"The correct answer is {answer}.")
     print(f"Your score: {score}/10")
 if __name__ == "__main__":
