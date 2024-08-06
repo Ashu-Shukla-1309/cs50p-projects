@@ -10,4 +10,4 @@ elif len(sys.argv)==3 and sys.argv[1] in ["-f","--font"] and sys.argv[2] in font
 else:
     sys.exit("Invalid Usage")
 msg=input()
-print({figlet.renderText(msg)})
+print(figlet.renderText(msg))
