@@ -3,8 +3,8 @@ p = inflect.engine()
 names=[]
 while True:
     try:
-        name=input()
-        names.append(name)
+        input=input()
+        inputs.append(input)
     except EOFError:
         print()
         break
