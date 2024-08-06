@@ -4,7 +4,7 @@ names=[]
 while True:
     try:
         input=input()
-        inputs.append(input)
+        names.append(input)
     except EOFError:
         print()
         break
