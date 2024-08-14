@@ -12,7 +12,7 @@ try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     response.raise_for_status()
     data = response.json()
-    price = data["bpi"]["USD"]["rate_float"]
+    price = data[$]["bpi"]["rate_float"]
     total_cost = amount * price
     print(f"{total_cost:,.4f} USD")
 except requests.RequestException as e:
