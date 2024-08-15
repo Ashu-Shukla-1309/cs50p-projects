@@ -1,10 +1,9 @@
+from plates import is_valid
 def main():
     test_valid1()
     test_valid2()
     test_valid3()
     test_valid4()
-
-
 def test_valid1():
     assert is_valid("c")==False
     assert is_valid("hello,world")==False
