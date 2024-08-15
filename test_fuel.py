@@ -12,7 +12,6 @@ def test_convert():
         convert("cat/dog")
     with pytest.raise(ZeroDivisionError):
         convert("1/0")
-
 def test_gauge():
     assert gauge(50)=="50%"
     assert gauge(1)=="E"
