@@ -1,18 +1,18 @@
-def main():
-    test_values1()
-    test_values2()
-    test_values3()
+from bank import value def main():
+    test_value1()
+    test_value2()
+    test_value3()
 
-def test_values1():
-    assert values("hello")==0
-    assert values("HELLO")==0
-    assert values("hello")==0
-def test_values2():
-    assert values("hi")==20
-    assert values("hiak")==20
-def test_values3():
-    assert values("cs50")==100
-    assert values("50")==100
-    assert values("what's up?")==100
+def test_value1():
+    assert value("hello")==0
+    assert value("HELLO")==0
+    assert value("hello")==0
+def test_value2():
+    assert value("hi")==20
+    assert value("hiak")==20
+def test_value3():
+    assert value("cs50")==100
+    assert value("50")==100
+    assert value("what's up?")==100
 if __name__ == "__main__":
     main()
