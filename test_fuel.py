@@ -8,9 +8,9 @@ def test_convert():
     assert convert("1/4")==25
     assert convert("1/100")==1
     assert convert("99/100")==99
-    with pytest.raisew(ValueError):
+    with pytest.raise(ValueError):
         convert("cat/dog")
-    with pytest.raises(ZeroDivisionError):
+    with pytest.raise(ZeroDivisionError):
         convert("1/0")
 
 def test_gauge():
