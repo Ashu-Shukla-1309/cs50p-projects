@@ -12,7 +12,7 @@ def main():
     except FileNotFoundError:
           sys.exit(f"File {sys.argv[1]} not Found")
     with open(sys.argv[2],"w") as file:
-         writer=csv.DictWriter(file,fieldnames["first","last","house"])
+         writer=csv.DictWriter(file,fieldnames=["first","last","house"])
          writer.writerow({"first":"first","last":"last","house":"house"})
          for row in output:
               writer.writerow({"first":row["first"],"last":row["last"],"house":row["house"]})
@@ -22,6 +22,6 @@ def check_command():
     if len(sys.argv)>3:
          sys.exit("Too many command line arguments")
     if ".csv" not in sys.argv[1] or ".csv" not in sys.argv[2]:
-         sys.exit("0")
-if __name__=__main__:
+         sys.exit("Not a csv file")
+if __name__=="__main__":
      main()
