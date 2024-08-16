@@ -10,7 +10,7 @@ else:
     if filename.endswith(".py"):
         try:
             with open(filename)as file:
-                for linr in file:
+                for line in file:
                     if not line.lstrip().startwith("#") and line.split!=[]:
                         count+=1
         except FileNotFoundError:
