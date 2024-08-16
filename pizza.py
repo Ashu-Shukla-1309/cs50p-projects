@@ -11,7 +11,7 @@ else:
     try:
         if csvfile.endswith("csv"):
             with open(csvfile) as file:
-                    reader=csv.reader()
+                    reader=csv.reader(file)
                     for row in reader:
                         table.append(row)
                     print(tabulate(table,tablefmt="grid",headers="firstrow"))
