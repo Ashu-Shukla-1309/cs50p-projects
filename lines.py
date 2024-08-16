@@ -11,7 +11,7 @@ else:
         try:
             with open(filename)as file:
                 for line in file:
-                    if not line.lstrip() and line.split!=[]:
+                    if not line.lstrip().startswith("#") and line.split!=[]:
                         count+=1
         except FileNotFoundError:
             sys.exit("File not found")
