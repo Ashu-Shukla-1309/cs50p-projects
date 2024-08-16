@@ -10,7 +10,7 @@ def main():
                     split_name=row["name"].split(",")
                     output.append({"first":split_name[1].lstrip(),"last":split_name[0],"house":row["house"]})
     except FileNotFoundError:
-          sys.exit("File not Found")
+          sys.exit(f"File {sys.argv[1]} not Found")
     with open(sys.argv[2],"w") as file:
          writer=csv.DictWriter(file,fieldnames["first","last","house"])
          writer.writerow({"first":"first","last":"last","house":"house"})
@@ -23,6 +23,5 @@ def check_command():
          sys.exit("Too many command line arguments")
     if ".csv" not in sys.argv[1] or ".csv" not in sys.argv[2]:
          sys.exit("Not a CSV File")
-
 if __name__=__main__:
      main()
