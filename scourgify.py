@@ -22,6 +22,6 @@ def check_command():
     if len(sys.argv)>3:
          sys.exit("Too many command line arguments")
     if ".csv" not in sys.argv[1] or ".csv" not in sys.argv[2]:
-         sys.exit("Not a CSV File")
+         sys.exit("0")
 if __name__=__main__:
      main()
