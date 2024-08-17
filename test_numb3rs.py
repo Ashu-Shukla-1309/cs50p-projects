@@ -6,8 +6,8 @@ def test_ip_true():
     assert validate("123.123.123.123")==True
     assert validate("12.13.3.123")==True
 def test_ip_false():
-    assert validate("1234.123.123.123")==False
-    assert validate("2.666.666.666")==False
+    assert validate("1233.123.123.123")==False
+    assert validate("1.555.555.555")==False
     assert validate("64.128.256.512")==False
     assert validate("cat")==False
 if __name__ == "__main__":

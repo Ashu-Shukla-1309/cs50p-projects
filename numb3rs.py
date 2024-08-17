@@ -8,7 +8,7 @@ def validate(ip):
         for i in range(1,5):
             if int(valid.group(i))>255:
                 return False
-            return True
+        return True
     else:
         return False
 if __name__ == "__main__":
