@@ -1,5 +1,4 @@
 import re
-import sys
 def main():
     print(convert(input("Hours: ")))
 def convert(s):
@@ -10,7 +9,7 @@ def convert(s):
             raise ValueError
         first=new_Format(cookies[1],cookies[2],cookies[3])
         second=new_Format(cookies[5],cookies[6],cookies[7])
-        return first+' to '+second
+        return first + ' to '+ second
     else:
         raise ValueError
 def new_Format(hour,minute,am_pm):
@@ -18,7 +17,7 @@ def new_Format(hour,minute,am_pm):
         if int(hour)==12:
             new_hour=12
         else:
-            int(hour)=12+int(hour)
+            new_hour=12+int(hour)
     else:
         if int(hour)==12:
             new_hour=0
