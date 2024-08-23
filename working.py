@@ -6,7 +6,7 @@ def convert(s):
     Format=re.search(r"^(([0-9][0-2]*):*([0-5][0-9])*)([A-P]M) to (([0-9][0-2])*:*([0-5][0-9])*)([A-P]M)$",s)
     if Format:
         cookies=Format.groups()
-        if int(cookies[1])>12 or int(cookies[5]>12):
+        if int(cookies[1])>12 or int(cookies[5])>12:
             raise ValueError
         first=new_Format(cookies[1],cookies[2],cookies[3])
         second=new_Format(cookies[5],cookies[6],cookies[7])
@@ -19,18 +19,16 @@ def new_Format(hour,minute,am_pm):
             new_hour=12
         else:
             int(hour)=12+int(hour)
-    elif am_pm=="AM":
-        if int(hour)=12:
-            new_hour=00
+    else:
+        if int(hour)==12:
+            new_hour=0
         else:
             new_hour=int(hour)
-    else:
-        raise TypeError
     if minute==None:
-        new_minute==":00"
+        new_minute=":00"
         time=f"{new_hour:02}"+new_minute
     else:
-        time=f"{new_hour:02}"+minute
+        time=f"{new_hour:02}"+":"+minute
     return time
 
 if __name__ == "__main__":
