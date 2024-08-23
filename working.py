@@ -29,9 +29,7 @@ def convert(s):
 
     # Return the converted time
     return f"{start_time} to {end_time}"
-def main():
-     user_input=input("Hours: ")
-     print(convert(user_input))
-if __name__ == "__main__":
-    main()
+user_input=input("Hours: ")
+print(convert(user_input))
+
 
