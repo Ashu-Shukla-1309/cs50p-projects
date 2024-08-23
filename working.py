@@ -29,6 +29,5 @@ def new_Format(hour,minute,am_pm):
     else:
         time=f"{new_hour:02}"+":"+minute
     return time
-
 if __name__ == "__main__":
     main()
