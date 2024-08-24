@@ -1,5 +1,4 @@
 import re
-import sys
 def main():
     print(convert(input("Hours: ")))
 def convert(s):
@@ -21,7 +20,7 @@ def convert(s):
     else:
         if start_hour!=12:
             start_hour+=12
-    if start_period=="AM":
+    if end_period=="AM":
         if end_hour==12:
             end_hour=0
     else:
