@@ -3,7 +3,7 @@ import sys
 def main():
     print(convert(input("Hours: ")))
 def convert(s):
-    pattern = r"^([0-9]{1,2}):?([0-9]{2})? (AM/PM) to ([0-9]{1,2}):?([0-9]{2})? (AM/PM)$"
+    pattern = r"^([0-9]{1,2}):?([0-9]{2})? (AM|PM) to ([0-9]{1,2}):?([0-9]{2})? (AM|PM)$"
     match=re.search(pattern,s)
     if not match:
         raise ValueError
