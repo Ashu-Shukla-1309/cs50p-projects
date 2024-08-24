@@ -11,9 +11,9 @@ def convert(s):
     start_hour,end_hour=int(start_hour),int(end_hour)
     start_minute=int(start_minute) if start_minute else 0
     end_minute=int(end_minute) if end_minute else 0
-    if (0<=start_minute<60 and 0<=end_minute<60):
+    if not (0<=start_minute<60 and 0<=end_minute<60):
         raise ValueError
-    if (1<=start_hour<=12 and 1<=end_hour<=12):
+    if not (1<=start_hour<=12 and 1<=end_hour<=12):
         raise ValueError
     if start_period=="AM":
         if start_hour==12:
@@ -28,9 +28,5 @@ def convert(s):
         if end_hour!=12:
             end_hour+=12
     return f"{start_hour:02}:{start_minute:02} to {end_hour:02}:{end_minute:02}"
-
-
-
-
 if __name__ == "__main__":
     main()
