@@ -1,25 +1,36 @@
 import re
+import sys
 def main():
-    user_input=input("Hours: ")
-    Convert=convert(user_input)
-    print(Convert)
+    print(convert(input("Hours: ")))
 def convert(s):
-    match = re.match(r"(\d{1,2}):(\d{2}) (AM|PM) to (\d{1,2}):(\d{2}) (AM|PM)", s)
+    pattern = r"^([0-9]{1,2}):?([0-9]{2})? (AM/PM) to ([0-9]{1,2}):?([0-9]{2})? (AM/PM)$"
+    match=re.search(pattern,s)
     if not match:
-        raise ValueError("Invalid time format)
-    start_hour, start_minute, start_period, end_hour, end_minute, end_period = match.groups()
-    start_hour = int(start_hour)
-    if start_period == 'PM' and start_hour != 12:
-        start_hour += 12
-    elif start_period == 'AM' and start_hour == 12:
-        start_hour = 0
-    end_hour = int(end_hour)
-    if end_period == 'PM' and end_hour != 12:
-        end_hour += 12
-    elif end_period == 'AM' and end_hour == 12:
-        end_hour = 0
-    start_time = f"{start_hour:02}:{start_minute}"
-    end_time = f"{end_hour:02}:{end_minute}"
-    return f"{start_time} to {end_time}"
+        raise ValueError
+    start_hour,start_minute,start_period,end_hour,end_minute,end_period=match.groups()
+    start_hour,end_hour=int(start_hour),int(end_hour)
+    start_minute=int(start_minute) if start_minute else 0
+    end_minute=int(end_minute) if end_minute else 0
+    if (0<=start_minute<60 and 0<=end_minute<60):
+        raise ValueError
+    if (1<=start_hour<=12 and 1<=end_hour<=12):
+        raise ValueError
+    if start_period=="AM":
+        if start_hour==12:
+            start_hour=0
+    else:
+        if start_hour!=12:
+            start_hour+=12
+    if start_period=="AM":
+        if end_hour==12:
+            end_hour=0
+    else:
+        if end_hour!=12:
+            end_hour+=12
+    return f"{start_hour:02}:{start_minute:02} to {end_hour:02}:{end_minute:02}"
+
+
+
+
 if __name__ == "__main__":
     main()
