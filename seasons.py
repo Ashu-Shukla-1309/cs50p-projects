@@ -12,7 +12,6 @@ def main():
     today = date.today()
     age_in_minutes = calculate_age_in_minutes(birth_date, today)
     age_in_words = convert_number_to_words(age_in_minutes)
-    # Capitalize the first letter of the output sentence
     print(f"{age_in_words.capitalize()} minutes")
 
 def calculate_age_in_minutes(birth_date, today):
