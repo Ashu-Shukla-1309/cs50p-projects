@@ -1,4 +1,4 @@
-from um import count
+import um
 def test_single_um():
     assert um.count("um") == 1
 
