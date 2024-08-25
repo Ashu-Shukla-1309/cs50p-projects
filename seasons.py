@@ -7,11 +7,10 @@ def main():
         birth_date = date.fromisoformat(birth_date)
     except ValueError:
         sys.exit("Invalid date format. Please use YYYY-MM-DD.")
-
     today = date.today()
     age_in_minutes = calculate_age_in_minutes(birth_date, today)
     age_in_words = convert_number_to_words(age_in_minutes)
-    print(f"{age_in_words} minutes")
+    print(f"{age_in_words.capitalize()} minutes")
 def calculate_age_in_minutes(birth_date, today):
     delta = today - birth_date
     return delta.days * 24 * 60
