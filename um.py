@@ -1,8 +1,8 @@
 import re
 def main():
-    print(count(input("Text: ")).strip())
+    print(count(input("Text: ")))
 def count(s):
-    pattern=r"\bum\b"
+    pattern=r'(?<!\S)um(?!\S)'
     match=re.findall(pattern,s,re.IGNORECASE)
     return len(match)
 if __name__ == "__main__":
