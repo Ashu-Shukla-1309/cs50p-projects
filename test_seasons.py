@@ -14,7 +14,12 @@ def test_output_format():
     output = f"{age_in_words.capitalize()} minutes"
     assert output == "Ten million five hundred forty thousand eight hundred minutes"
 if __name__ == "__main__":
-    test_calculate_age_in_minutes()
-    test_convert_number_to_words()
-    test_output_format()
-    print("All tests passed!")
+    try:
+        test_calculate_age_in_minutes()
+        test_convert_number_to_words()
+        test_output_format()
+        print("All tests passed!")
+        exit(0)
+    except AssertionError as e:
+        print(f"Test failed: {e}")
+        exit(1)
