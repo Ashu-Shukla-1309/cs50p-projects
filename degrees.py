@@ -82,9 +82,11 @@ def shortest_path(source, target):
                 if child.state==target:
                     solution=[]
                     solution.append((movie_id,person_id))
-                    node=node.parent
-                solution.reverse()
-                frontier.add(child)
+                    while node.parent is not None:
+                        solution.append((node.action,node.state))
+                        node=node.parent
+                    solution.reverse()
+                    frontier.add(child)
 
 def person_id_for_name(name):
     """
