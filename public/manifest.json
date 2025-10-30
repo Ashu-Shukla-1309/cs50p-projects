@@ -1,6 +1,6 @@
 {
-  "short_name": "ShikkhaChain",
-  "name": "ShikkhaChain Certificate Verification",
+  "short_name": "BlockVerify",
+  "name": "BlockVerify Certificate Verification",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1976d2",
