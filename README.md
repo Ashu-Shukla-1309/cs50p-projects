@@ -118,7 +118,7 @@ BlockVerify is a decentralized platform for issuing, verifying, and revoking aca
 ## 🏗️ Architecture
 
 ### Smart Contract (Solidity)
-- **Location:** `contracts/ShikkhaChain.sol`
+- **Location:** `contracts/BlockVerify.sol`
 - **Functions:**
   - `issueCertificate()` - Issue new certificate (admin only)
   - `verifyCertificate()` - Verify certificate by hash (public)
