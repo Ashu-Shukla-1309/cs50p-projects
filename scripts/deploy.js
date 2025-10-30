@@ -34,7 +34,7 @@ async function main() {
   console.log("Contract address saved to:", addressFilePath);
 
   // Copy contract ABI to config directory
-  const artifactPath = path.join(__dirname, '../artifacts/contracts/ShikkhaChain.sol/CertificateRegistry.json');
+  const artifactPath = path.join(__dirname, '../artifacts/contracts/BlockVerify.sol/CertificateRegistry.json');
   if (fs.existsSync(artifactPath)) {
     const artifact = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
     const abiFilePath = path.join(configDir, 'contractABI.json');
