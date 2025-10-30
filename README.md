@@ -1,8 +1,16 @@
-# ShikkhaChain
+# BlockVerify
 
-**A Blockchain-Powered Academic Credential Verification System for Bangladesh**
+**A Blockchain-Powered Academic Credential Verification System**
 
-ShikkhaChain is a decentralized platform for issuing, verifying, and revoking academic certificates using Ethereum smart contracts and IPFS. Designed with scalability and transparency in mind, it empowers educational institutions, regulators, employers, and graduates to engage in secure, trustless credential management.
+BlockVerify is a decentralized platform for issuing, verifying, and revoking academic certificates using Ethereum smart contracts and IPFS. Designed with scalability and transparency in mind, it empowers educational institutions, regulators, employers, and graduates to engage in secure, trustless credential management.
+
+---
+
+## 📚 Academic Project
+
+**Project Type:** 2nd Year Mini Project
+**Author:** Ashutosh Shukla
+**Year:** 2025
 
 ---
 
@@ -11,15 +19,10 @@ ShikkhaChain is a decentralized platform for issuing, verifying, and revoking ac
 - ✔️ Decentralized certificate issuance and revocation
 - 🔐 IPFS-based off-chain metadata storage
 - 🧠 Ethereum smart contracts for on-chain verification
-- 🧩 Role-based access control (Government, Regulator, Institution, Public)
+- 🧩 Role-based access control (Institution Admin, Public)
 - 📄 QR and hash-based public certificate verification
 - 📤 Export verified credentials as signed PDFs (via jsPDF)
 - 🌐 React-based frontend with MetaMask integration
-
----
-📄 [Read the full preprint on arXiv](https://arxiv.org/abs/2508.05334)
-📅 Published: August 8, 2025
-✍️ Authors: Ahsan Farabi, Israt Khandaker, Nusrat Jahan, Ibrahim Khalil Shanto
 
 ---
 
