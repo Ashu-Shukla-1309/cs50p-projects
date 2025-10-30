@@ -275,4 +275,6 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ## 📄 License
 
-This project is part of academic research. Please cite the paper if you use this work.
+This project is developed as a 2nd year mini project by Ashutosh Shukla (2025).
+
+For educational and academic purposes.
