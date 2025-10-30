@@ -150,7 +150,7 @@ function App() {
 
       <footer style={styles.footer}>
         <p style={styles.footerText}>
-          ShikkhaChain © 2025 | Blockchain Certificate Verification System
+          BlockVerify © 2025 | Blockchain Certificate Verification System
         </p>
       </footer>
     </div>
