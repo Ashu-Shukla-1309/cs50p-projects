@@ -214,7 +214,7 @@ REACT_APP_IPFS_PROJECT_SECRET=your_secret
 ```
 cs50p-projects/
 ├── contracts/              # Solidity smart contracts
-│   └── ShikkhaChain.sol
+│   └── BlockVerify.sol
 ├── scripts/               # Deployment scripts
 │   └── deploy.js
 ├── src/
