@@ -19,7 +19,7 @@ const Header = ({ walletAddress, isAdmin, onConnect }) => {
       <div style={styles.container}>
         {/* Left: Logo/Title */}
         <div style={styles.logo}>
-          <h1 style={styles.logoText}>ShikkhaChain</h1>
+          <h1 style={styles.logoText}>BlockVerify</h1>
         </div>
 
         {/* Center: Role Indicator */}
